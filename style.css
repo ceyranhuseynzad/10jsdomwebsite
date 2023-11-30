@@ -1,0 +1,235 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.container {
+  max-width: 1550px;
+  width: 100%;
+  margin: auto;
+  padding: 0 100px;
+}
+
+nav {
+  padding: 20px 0;
+  width: 100%;
+  position: relative;
+  z-index: 99;
+}
+nav .nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+nav .nav .logo p {
+  font-size: 25px;
+  color: blue;
+  font-weight: 900;
+}
+nav .nav .list ul {
+  display: flex;
+  gap: 40px;
+}
+nav .nav .list ul li {
+  font-size: 18px;
+  font-weight: bold;
+  color: rgb(113, 112, 112);
+  transition: all 0.5s ease;
+}
+nav .nav .list ul li:hover {
+  color: rgb(41, 40, 40);
+}
+nav .nav .menu {
+  display: none;
+  border: 1px solid black;
+  padding: 5px;
+  border-radius: 5px;
+  width: 50px;
+  height: 40px;
+  text-align: center;
+}
+nav .nav .menu .bi {
+  font-size: 30px;
+}
+
+.menu-list {
+  position: absolute;
+  background-color: rgb(200, 207, 207);
+  left: 0;
+  top: 60px;
+  width: 100%;
+  padding: 20px 50px;
+  z-index: 90;
+  transform: scale(0);
+  transition: transform 0.3s ease;
+}
+.menu-list ul {
+  display: flex;
+  gap: 40px;
+  flex-direction: column;
+}
+.menu-list ul li {
+  font-size: 18px;
+  font-weight: bold;
+  color: rgb(113, 112, 112);
+  transition: all 0.5s ease;
+}
+.menu-list ul li:hover {
+  color: rgb(41, 40, 40);
+}
+
+.s-menu {
+  position: absolute;
+  background-color: rgb(200, 207, 207);
+  left: 0;
+  top: 60px;
+  width: 100%;
+  padding: 20px 50px;
+  z-index: 90;
+  transform: scale(1);
+  transition: transform 0.8s ease;
+}
+.s-menu ul {
+  display: flex;
+  gap: 40px;
+  flex-direction: column;
+}
+.s-menu ul li {
+  font-size: 18px;
+  font-weight: bold;
+  color: rgb(113, 112, 112);
+  transition: all 0.5s ease;
+}
+.s-menu ul li:hover {
+  color: rgb(41, 40, 40);
+}
+
+@media screen and (max-width: 950px) {
+  nav .nav .list {
+    display: none;
+  }
+  nav .nav .menu {
+    display: block;
+  }
+}
+.section1 .container .home .yes .here {
+  display: inline-block;
+  text-align: center;
+  border-radius: 5px;
+  padding: 5px 10px;
+  color: #1e30f3;
+}
+.section1 .container .home .yes .text {
+  color: gray;
+  font-size: 25px;
+  margin-top: 30px;
+  background: linear-gradient(to right, blue, red);
+}
+.section1 .container .home .yes .head {
+  font-size: 70px;
+  background: linear-gradient(to right, blue, red);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+          background-clip: text;
+}
+.section1 .container .home .yes .buttons {
+  display: flex;
+  gap: 50px;
+  margin-top: 50px;
+}
+.section1 .container .home .yes .buttons button {
+  font-size: 25px;
+  padding: 15px 30px;
+  border-radius: 5px;
+}
+.section1 .container .home .yes .buttons .button1 {
+  background-color: #1e30f3;
+  border: none;
+  color: white;
+}
+.section1 .container .home .yes .buttons .button2 {
+  transition: all 0.5s ease;
+}
+.section1 .container .home .yes .buttons .button2:hover {
+  background-color: black;
+  color: white;
+  border: none;
+}
+.section1 .container .home .no {
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+.section1 .container .home .no .background {
+  width: 450px;
+  height: 450px;
+  position: absolute;
+  top: 53px;
+  z-index: -1;
+  background: #1e30f3;
+  background: linear-gradient(135deg, #1e30f3 0%, #e21e80 100%);
+}
+
+@media screen and (max-width: 1450px) {
+  .section1 .home {
+    display: flex;
+    flex-direction: column;
+    row-gap: 70px;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+  }
+  .section1 .home .yes {
+    text-align: center;
+  }
+  .section1 .home .yes .here {
+    margin-left: 120px;
+  }
+  .section1 .home .yes .buttons {
+    flex-direction: column;
+  }
+  .section1 .home .no .background {
+    top: 500px;
+  }
+}
+@media screen and (max-width: 850px) {
+  .section1 .home .yes .here {
+    margin-left: 120px;
+  }
+  .section1 .home .yes .buttons {
+    flex-direction: column;
+  }
+}
+.section2 .container .about .bash {
+  font-size: 50px;
+  background: linear-gradient(to right, blue, red);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+          background-clip: text;
+}
+.section2 .container .about .name2 {
+  color: rgb(55, 54, 54);
+  font-size: 25px;
+  margin-top: 10px;
+  margin-bottom: 30px;
+}
+.section2 .container .about .text2 {
+  font-size: 20px;
+  color: rgb(87, 86, 86);
+  margin-bottom: 30px;
+}
+.section2 .container .about .icons .bi {
+  margin-right: 30px;
+  text-align: center;
+  font-size: 30px;
+  background: linear-gradient(to right, blue, red);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+          background-clip: text;
+}/*# sourceMappingURL=style.css.map */
